@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * @link http://symfony.com/doc/current/cookbook/bundles/extension.html
  */
-class OCSoftwarePLSmsApiExtension extends Extension
+class OCSSmsApiExtension extends Extension
 {
     /**
      * {@inheritdoc}
@@ -24,5 +24,9 @@ class OCSoftwarePLSmsApiExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
+        
+        $smsClient = $container->getDefinition('ocs.sms_api_client');
+        $smsClient->addMethodCall('setPasswordHash', md5($config['ocs_smsapi.password']));
+        
     }
 }

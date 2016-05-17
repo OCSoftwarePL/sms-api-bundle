@@ -4,6 +4,6 @@ namespace OCSoftwarePL\SmsApiBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class OCSoftwarePLSmsApiBundle extends Bundle
+class OCSSmsApiBundle extends Bundle
 {
 }
