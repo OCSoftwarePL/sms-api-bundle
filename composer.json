@@ -1,0 +1,25 @@
+{
+  "name": "ocsoftwarepl/sms-api-bundle",
+  "description": "Bundle do smsapi",
+  "type": "symfony-bundle",
+  "authors": [
+    {
+      "name": "bf"
+    }
+  ],
+  "keywords": [
+    "sms api"
+  ],
+  "license": [
+    "MIT"
+  ],
+  "require": {
+    "smsapi/php-client": "^1.7"
+  },
+  "autoload": {
+    "psr-0": {
+      "OCSoftwarePL\\SmsApiBundle": ""
+    }
+  },
+  "target-dir": "OCSoftware/SmsApiBundle"
+}

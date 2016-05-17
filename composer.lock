@@ -1,0 +1,59 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "af6981df4f3154b7706f51b13ca911fc",
+    "content-hash": "ae94501da181081f10919ff1f48e4a0a",
+    "packages": [
+        {
+            "name": "smsapi/php-client",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/smsapi/smsapi-php-client.git",
+                "reference": "19175172479f8cb3af4274f339bc199de777b9dd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/smsapi/smsapi-php-client/zipball/19175172479f8cb3af4274f339bc199de777b9dd",
+                "reference": "19175172479f8cb3af4274f339bc199de777b9dd",
+                "shasum": ""
+            },
+            "require-dev": {
+                "apigen/apigen": "~4",
+                "phpunit/phpunit": "~4.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SMSApi\\": "smsapi"
+                },
+                "classmap": [
+                    "smsapi"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "description": "Library for communicating with provider",
+            "homepage": "http://smsapi.pl",
+            "keywords": [
+                "mms",
+                "sms",
+                "vms"
+            ],
+            "time": "2016-05-16 13:04:48"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
