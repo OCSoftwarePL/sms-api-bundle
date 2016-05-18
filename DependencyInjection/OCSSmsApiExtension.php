@@ -24,9 +24,6 @@ class OCSSmsApiExtension extends Extension
 
         $loader = new Loader\XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.xml');
-        
-        $smsClient = $container->getDefinition('ocs.sms_api_client');
-        $smsClient->addMethodCall('setPasswordHash', md5($config['ocs_smsapi.password']));
-        
+
     }
 }
