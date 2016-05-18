@@ -31,7 +31,7 @@ class SmsApiPlSender
 
             $this->api = new SmsFactory($proxy);
 
-            $client = new Client($this->config['username']);
+            $client = new Client($this->config['login']);
             $client->setPasswordRaw($this->config['password']);
 
             $this->api->setClient($client);
