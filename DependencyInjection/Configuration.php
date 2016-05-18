@@ -22,9 +22,10 @@ class Configuration implements ConfigurationInterface
         $rootNode = $treeBuilder->root('ocs_pl_smsapi');
 
         $rootNode->children()
-            ->scalarNode('default_sender_name')->defaultNull()->end()
+            ->scalarNode('premium_sender_name')->defaultNull()->end()
             ->scalarNode('token')->isRequired()->end()
             ->scalarNode('proxy')->defaultNull()->end()
+            ->scalarNode('callback_url')->defaultNull()->end()
             ->end();
 
         return $treeBuilder;

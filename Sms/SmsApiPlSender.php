@@ -12,12 +12,14 @@ class SmsApiPlSender
 {
     private $config = [];
     private $senderName;
+    private $callbackUrl;
     private $api = null;
 
     public function __construct(array $config)
     {
         $this->config = $config;
-        $this->senderName = $config['default_sender_name'];
+        $this->senderName = $config['premium_sender_name'];
+        $this->callbackUrl = $config['callback_url'];
     }
 
     protected function getApi()
@@ -44,6 +46,7 @@ class SmsApiPlSender
         $action->setText($sms->msg);
         $action->setTo($sms->phone);
         $action->setSender($sms->sender ?: $this->senderName);
+        $action->setNotifyUrl($sms->callbackUrl ?: $this->callbackUrl);
 
         return $action;
     }
