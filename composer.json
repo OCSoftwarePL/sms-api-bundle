@@ -1,6 +1,6 @@
 {
   "name": "ocsoftwarepl/sms-api-bundle",
-  "description": "Bundle do smsapi",
+  "description": "Bundle do smsapi.pl",
   "type": "symfony-bundle",
   "authors": [
     {
@@ -17,9 +17,8 @@
     "smsapi/php-client": "^1.7"
   },
   "autoload": {
-    "psr-0": {
-      "OCSoftwarePL\\SmsApiBundle": ""
+    "psr-4": {
+      "OCSoftwarePL\\SmsApiBundle\\": ""
     }
-  },
-  "target-dir": "OCSoftwarePL/SmsApiBundle"
+  }
 }
