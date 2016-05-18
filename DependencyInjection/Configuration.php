@@ -23,8 +23,7 @@ class Configuration implements ConfigurationInterface
 
         $rootNode->children()
             ->scalarNode('default_sender_name')->defaultNull()->end()
-            ->scalarNode('login')->isRequired()->end()
-            ->scalarNode('password')->isRequired()->end()
+            ->scalarNode('token')->isRequired()->end()
             ->scalarNode('proxy')->defaultNull()->end()
             ->end();
 
