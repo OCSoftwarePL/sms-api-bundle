@@ -8,7 +8,7 @@ use SMSApi\Api\SmsFactory;
 use SMSApi\Client;
 use SMSApi\Proxy\Http\Native;
 
-class SmsApiPlSender
+class SmsApiPlSender extends AbstractSender
 {
     private $config = [];
     private $senderName;
